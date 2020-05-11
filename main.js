@@ -7,8 +7,10 @@ function main() {
         fs.mkdirSync(projectName)
     } else {
         console.error('You must give a project name!')
+        process.exit()
     }
 
+    fs.copyFileSync('./mockFiles/index.html', `./${projectName}/index.html`)
 }
 
 main()
