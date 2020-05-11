@@ -1,3 +1,7 @@
+fooBar/
+
+node_modules/
+
 *.swp
 **/*.swp
 
