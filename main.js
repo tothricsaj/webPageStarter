@@ -1,5 +1,9 @@
+var fs = require('fs')
+
 function main() {
-    console.log('foobar')
+    let projectName = process.argv[2]
+
+    fs.mkdirSync(projectName)
 }
 
 main()
